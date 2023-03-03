@@ -17,7 +17,6 @@ function Admin() {
   const [reference, setReference] = useState('');
 
   const selectHandler = e => {
-    console.log(e.target.value);
     setOptionValue(e.target.value);
   };
 
@@ -55,7 +54,7 @@ function Admin() {
           <select name="reference" id="reference" onChange={selectHandler}>
             <option value="hotdrinks">Hot drinks</option>
             <option value="colddrinks">Soft drinks</option>
-            <option value="acloholdrinks">Alcohol drinks</option>
+
             <option value="beer">Beer</option>
             <option value="wines">Wines</option>
             <option value="food">Food</option>
