@@ -31,6 +31,8 @@ function Admin() {
       imgUrl: itemImgUrl,
       type: itemType,
     });
+
+    navigate('/', { replace: true });
   }
 
   useEffect(() => {
