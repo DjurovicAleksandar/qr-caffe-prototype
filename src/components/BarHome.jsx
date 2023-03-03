@@ -73,7 +73,7 @@ function BarHome() {
     <div className="w-full flex items-center justify-center">
       <div className="w-full h-full text-black">
         <h1 className=" text-center mt-4 mb-12 text-xl font-bold text-green-200">
-          Welcome to our menu
+          Welcome to our MENU
         </h1>
         <div className="h-[500px]  overflow-y-auto">
           {menu2.map(([path, title], index) => {
