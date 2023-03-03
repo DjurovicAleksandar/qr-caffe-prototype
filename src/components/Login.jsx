@@ -2,6 +2,7 @@ import { auth } from '../config/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useState, useRef } from 'react';
 import { useNavigate, redirect } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      //   console.log(auth?.currentUser);
+
       navigate('/caffe-admin', { replace: true });
     } catch (error) {
       console.error(error);

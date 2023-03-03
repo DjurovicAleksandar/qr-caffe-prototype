@@ -1,5 +1,6 @@
 import { BsFillCartFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { auth } from '../config/firebase';
 
 function Navigation() {
   return (
@@ -11,7 +12,7 @@ function Navigation() {
       <button className="hover:scale-90">
         <BsFillCartFill />
       </button>
-      <Link to="/caffe-login">Login</Link>
+      <Link to="/caffe-login">Account</Link>
     </div>
   );
 }
